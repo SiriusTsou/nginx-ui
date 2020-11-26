@@ -8,6 +8,8 @@ services:
       - 8080:8080
     volumes:
       - nginx:/etc/nginx
+    environment:
+      - APPLICATION_ROOT=/123
 
   nginx:
     container_name: nginx
